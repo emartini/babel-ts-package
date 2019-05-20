@@ -11,13 +11,15 @@ module.exports = {
     "prettier/react",
     "prettier/@typescript-eslint"
   ],
-  plugins: ["@typescript-eslint", "jsx-a11y"],
+  plugins: ["@typescript-eslint", "jsx-a11y", "react-hooks"],
   rules: {
     "import/prefer-default-export": "off",
     "import/no-default-export": "error",
     "@typescript-eslint/explicit-function-return-type": [
       "error",
       { allowExpressions: true, allowTypedFunctionExpressions: true }
-    ]
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   }
 };
